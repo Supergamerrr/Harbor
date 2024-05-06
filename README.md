@@ -6,16 +6,14 @@
 
 &nbsp;
 
-# What is Harbor
-Harbor is a script that downloads, configures and runs [Alpine Linux](https://alpinelinux.org) minirootfs on your Pterodactyl-hosted servers with root privileges and with as little of a footprint as possible creating essentially a type of "virtual machine" out of your server. The goal is to provide a tool that will run on as many hosting services using Pterodactyl as possible using various loaders for the script written in various different languages such as Java, GoLang, Python, etc.
+# Windows 7
+
+Запустите виртуальную машину Windows 7 на почти любом бесплатном Minecraft хостинге!
 
 &nbsp;
 
-# Roadmap
-- [x] Full `AARCH64` support.
-- [ ] Automatically fetch latest Alpine version.
-- [ ] Automatic script updater.
-- [x] Create some basic wrappers for the script.
+# Планы
+- [x] 
 
 &nbsp;
 
@@ -35,12 +33,11 @@ The server must have all of the following system requirements to run:
 *- You can try running it, it will tell you if your CPU is not supported. <br />
 *- You can probably get away with a tiny little less disk space.
 
-### Help
-If you face any errors or issues while using Harbor, feel free to [create an issue](https://github.com/RealTriassic/Harbor/issues/new) on our GitHub repository.
-
 &nbsp;
 
-# Authors
+# Authors | Windows 7
+* [@Supergamerrr](https://github.com/Supergamerrr)
+# Authors | Harbor
 * [@RealTriassic](https://github.com/RealTriassic)
 
 # License
