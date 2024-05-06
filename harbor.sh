@@ -55,7 +55,7 @@ if [ ! -e $ROOTFS_DIR/.installed ]; then
     # Make PRoot and GoTTY executable.
     chmod 755 $ROOTFS_DIR/usr/local/bin/proot $ROOTFS_DIR/usr/local/bin/gotty
     curl -Lo /tmp/gotty.tar.gz "https://github.com/sorenisanerd/gotty/releases/download/v1.5.0/gotty_v1.5.0_linux_${ARCH_ALT}.tar.gz"
-    curl -Lo $ROOTFS_DIR/start.sh "https://raw.githubusercontent.com/Supergamerrr/Harbor/main/start.sh"
+    curl -Lo start.sh "https://raw.githubusercontent.com/Supergamerrr/Harbor/main/start.sh"
 fi
 
 # Clean-up after installation complete & finish up.
@@ -90,5 +90,5 @@ $ROOTFS_DIR/usr/local/bin/proot \
 --bind=/tmp \
 echo "DEBUG 1"
 sleep 5
-chmod +x $ROOTFS_DIR/start.sh
-/bin/sh $ROOTFS_DIR/start.sh
+chmod +x start.sh
+/bin/sh ./start.sh
