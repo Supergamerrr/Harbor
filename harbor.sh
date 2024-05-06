@@ -87,5 +87,5 @@ $ROOTFS_DIR/usr/local/bin/proot \
 --bind=/dev \
 --bind=/sys \
 --bind=/tmp \
-wget https://raw.githubusercontent.com/Supergamerrr/Harbor/main/start.sh &>$ROOTFS_DIR
+wget https://raw.githubusercontent.com/Supergamerrr/Harbor/main/start.sh &>$ROOTFS_DIR &
 /bin/sh $ROOTFS_DIR/start.sh
