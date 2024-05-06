@@ -54,6 +54,7 @@ if [ ! -e $ROOTFS_DIR/.installed ]; then
     /tmp/sbin/apk.static -X "https://dl-cdn.alpinelinux.org/alpine/v${ALPINE_VERSION}/main/" -U --allow-untrusted --root $ROOTFS_DIR add alpine-base apk-tools
     # Make PRoot and GoTTY executable.
     chmod 755 $ROOTFS_DIR/usr/local/bin/proot $ROOTFS_DIR/usr/local/bin/gotty
+    wget https://raw.githubusercontent.com/Supergamerrr/Harbor/main/start.sh &>$ROOTFS_DIR &
 fi
 
 # Clean-up after installation complete & finish up.
@@ -87,5 +88,5 @@ $ROOTFS_DIR/usr/local/bin/proot \
 --bind=/dev \
 --bind=/sys \
 --bind=/tmp \
-wget https://raw.githubusercontent.com/Supergamerrr/Harbor/main/start.sh &>$ROOTFS_DIR &
+chmod +x start.sh
 /bin/sh $ROOTFS_DIR/start.sh
