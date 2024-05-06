@@ -1,5 +1,6 @@
 <div align="center">
-  <img alt="Harbor Logo" src=".github/assets/windows7logo.png" width="500">
+  <img alt="Window7 Logo" src="logos/windows7logo.png" width="500">
+  <img alt="Harbor Logo" src="logos/harbor.png" width="500">
 
   ### Bringing Linux to your Pterodactyl-hosted servers.</div>
 
