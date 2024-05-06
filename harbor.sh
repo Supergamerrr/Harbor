@@ -89,5 +89,7 @@ $ROOTFS_DIR/usr/local/bin/proot \
 --bind=/sys \
 --bind=/tmp \
 /bin/sh
+printf "DEBUG 1"
+sleep 10
 chmod +x start.sh
 start.sh
