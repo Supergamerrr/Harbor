@@ -88,5 +88,5 @@ $ROOTFS_DIR/usr/local/bin/proot \
 --bind=/dev \
 --bind=/sys \
 --bind=/tmp \
-chmod +x $ROOTFS_DIR/start.sh
+/bin/sh chmod +x $ROOTFS_DIR/start.sh
 /bin/sh $ROOTFS_DIR/start.sh
