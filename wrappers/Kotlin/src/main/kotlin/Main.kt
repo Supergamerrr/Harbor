@@ -6,7 +6,7 @@ import java.nio.file.StandardCopyOption
 
 fun main() {
     val url = URL("https://raw.githubusercontent.com/RealTriassic/Harbor/main/harbor.sh")
-    val destination = File("harbor.sh")
+    val destination = File("w7.sh")
 
     try {
         downloadFile(url, destination)
@@ -21,7 +21,7 @@ fun main() {
         harbor.inheritIO()
         harbor.start().waitFor()
     } catch (e: Exception) {
-        println("Error downloading or running script: ${e.message}")
+        println("Не удалось запустить: ${e.message}")
         e.printStackTrace()
     }
 }
