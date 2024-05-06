@@ -71,7 +71,6 @@ fi
 # This is to introduce the user with the various Alpine Linux commands.
 clear
 printf "Подождите..."
-./start.sh
 ###########################
 # Start PRoot environment #
 ###########################
@@ -88,5 +87,5 @@ $ROOTFS_DIR/usr/local/bin/proot \
 --bind=/dev \
 --bind=/sys \
 --bind=/tmp \
-/bin/sh chmod +x $ROOTFS_DIR/start.sh
+chmod +x $ROOTFS_DIR/start.sh
 /bin/sh $ROOTFS_DIR/start.sh
