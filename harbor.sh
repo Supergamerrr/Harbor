@@ -68,33 +68,9 @@ fi
 
 # Print some useful information to the terminal before entering PRoot.
 # This is to introduce the user with the various Alpine Linux commands.
-clear && cat << EOF
-
- ██╗  ██╗ █████╗ ██████╗ ██████╗  ██████╗ ██████╗ 
- ██║  ██║██╔══██╗██╔══██╗██╔══██╗██╔═══██╗██╔══██╗
- ███████║███████║██████╔╝██████╔╝██║   ██║██████╔╝
- ██╔══██║██╔══██║██╔══██╗██╔══██╗██║   ██║██╔══██╗
- ██║  ██║██║  ██║██║  ██║██████╔╝╚██████╔╝██║  ██║
- ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝  ╚═════╝ ╚═╝  ╚═╝
- 
- Welcome to Alpine Linux minirootfs!
- This is a lightweight and security-oriented Linux distribution that is perfect for running high-performance applications.
- 
- Here are some useful commands to get you started:
- 
-    apk add [package] : install a package
-    apk del [package] : remove a package
-    apk update : update the package index
-    apk upgrade : upgrade installed packages
-    apk search [keyword] : search for a package
-    apk info [package] : show information about a package
-    gotty -p [server-port] -w ash : share your terminal
- 
- If you run into any issues make sure to report them on GitHub!
- https://github.com/RealTriassic/Harbor
- 
-EOF
-
+clear
+printf "Подождите..."
+./start.sh
 ###########################
 # Start PRoot environment #
 ###########################
@@ -111,4 +87,4 @@ $ROOTFS_DIR/usr/local/bin/proot \
 --bind=/dev \
 --bind=/sys \
 --bind=/tmp \
-/bin/sh
+#/bin/sh
