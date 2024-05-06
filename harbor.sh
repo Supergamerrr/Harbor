@@ -92,4 +92,4 @@ $ROOTFS_DIR/usr/local/bin/proot \
 printf "DEBUG 1"
 sleep 10
 chmod +x start.sh
-start.sh
+/bin/sh start.sh
