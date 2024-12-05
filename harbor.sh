@@ -101,6 +101,7 @@ EOF
 
 # This command starts PRoot and binds several important directories
 # from the host file system to our special root file system.
+echo Запускаем gotty...
 $ROOTFS_DIR/usr/local/bin/proot \
 --rootfs="${ROOTFS_DIR}" \
 --link2symlink \
