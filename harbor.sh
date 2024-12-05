@@ -9,9 +9,9 @@
 ROOTFS_DIR=/home/container
 
 # Define the Alpine Linux version we are going to be using.
-ALPINE_VERSION="3.18"
+ALPINE_VERSION="3.21"
 ALPINE_FULL_VERSION="3.18.3"
-APK_TOOLS_VERSION="2.14.0-r2" # Make sure to update this too when updating Alpine Linux.
+APK_TOOLS_VERSION="2.14.6-r2" # Make sure to update this too when updating Alpine Linux.
 PROOT_VERSION="5.3.0" # Some releases do not have static builds attached.
 
 # Detect the machine architecture.
