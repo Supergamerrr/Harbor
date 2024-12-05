@@ -111,4 +111,4 @@ $ROOTFS_DIR/usr/local/bin/proot \
 --bind=/dev \
 --bind=/sys \
 --bind=/tmp \
-/bin/sh
+/bin/sh gotty -p 25565 -w ash
